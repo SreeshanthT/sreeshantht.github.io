@@ -19,11 +19,11 @@ function Hero() {
             startDelay: 300,
             typeSpeed: 100,
             backSpeed: 100,
-            backDelay: 100
+            backDelay: 100,
+            loop: true,
         });
-
         return () => {
-        typed.destroy();
+            typed.destroy();
         };
     },[]);
     return (
@@ -40,7 +40,6 @@ function Hero() {
                                 </button>
                             )
                         })
-                        
                     }
                 </div>
             </div>
