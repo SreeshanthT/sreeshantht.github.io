@@ -1,31 +1,39 @@
-import React from 'react'
+import React,{ useState, useEffect } from 'react'
+import './NavBar.css'
 
 function NavBar() {
+  const [scrollLevel, setScrollLevel] = useState()
+  const handleScroll = ()=>{
+    setScrollLevel(window.pageYOffset);
+    console.log(window.pageYOffset)
+    
+  }
+  useEffect(()=>{
+    window.addEventListener("scroll", handleScroll);
+    return (()=>{
+      window.removeEventListener("scroll", handleScroll);
+    });
+  },[]);
   return (
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
+    <div id="header" style={scrollLevel >= 80 ?{
+      backgroundColor:'#ffff',
+      boxShadow:'rgba(0, 0, 0, 0.1) 0px 4px 12px'}:{
+        backgroundColor:'transparent',
+        boxShadow:'rgba(0, 0, 0, 0) 0px 4px 12px'
+      }}>
+      <div className='header-left'></div>
+      <div className='header-center nav-menu'>
+        <ul>
+            <li><a href="#hero" className={"nav-link scrollto"}><i className={"bx bx-home"}></i> <span>Home</span></a></li>
+            <li><a href="#about" className={"nav-link scrollto"}><i className={"bx bx-user"}></i> <span>About</span></a></li>
+            <li><a href="#resume" className={"nav-link scrollto"}><i className={"bx bx-file-blank"}></i> <span>Resume</span></a></li>
+            <li><a href="#portfolio" className={"nav-link scrollto"}><i className={"bx bx-book-content"}></i> <span>Portfolio</span></a></li>
+            <li><a href="#services" className={"nav-link scrollto"}><i className={"bx bx-server"}></i> <span>Services</span></a></li>
+            <li><a href="#contact" className={"nav-link scrollto"}><i className={"bx bx-envelope"}></i> <span>Contact</span></a></li>
         </ul>
       </div>
-    </div>
-  </nav>
+      <div className='header-right'></div>
+    </div>  
   )
 }
 

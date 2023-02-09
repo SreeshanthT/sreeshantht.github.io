@@ -8,6 +8,8 @@ function App() {
     <div className="App">
       <NavBar/>
       <Hero/>
+      <Hero/>
+      {/* <Hero/> */}
     </div>
   );
 }
