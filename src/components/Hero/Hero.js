@@ -7,7 +7,7 @@ import './Hero.css'
 import "aos/dist/aos.css";
 import 'boxicons/css/boxicons.min.css';
 
-function Hero(props) {
+function Hero() {
     const el = useRef(null);
     const [socials, setSocials] = useState([])
     useEffect(() => {
@@ -27,7 +27,7 @@ function Hero(props) {
         };
     },[]);
     return (
-        <section ref={props.targetRef} id="hero" className='d-flex flex-column justify-content-center'>
+        <section id="hero" className='d-flex flex-column justify-content-center'>
             <div className="container" data-aos="zoom-in" data-aos-delay="100">
                 <h1>Sreeshanth Thekkedath</h1>
                 <p>I'm <span ref={el}></span></p>

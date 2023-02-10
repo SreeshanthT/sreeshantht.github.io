@@ -1,4 +1,4 @@
-import React,{useRef} from 'react'
+import React from 'react'
 
 import Hero from './components/Hero/Hero';
 import NavBar from './components/NavBar/NavBar';
@@ -7,12 +7,11 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const targetRef = useRef(null);
   return (
     <div className="App">
-      <NavBar targetRef={targetRef}/>
-      <Hero targetRef={targetRef}/>
-      <About targetRef={targetRef}></About>
+      <NavBar/>
+      <Hero/>
+      <About></About>
       {/* <Hero/> */}
     </div>
   );

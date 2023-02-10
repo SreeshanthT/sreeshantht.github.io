@@ -27,12 +27,14 @@ function WebNavBar(props) {
     event.preventDefault();
     scrollInto(event.target.parentNode.getAttribute('data-secion'))
   }
-  
+
   const handleHeaderStyle = useCallback(()=>{
     if(scrollLevel && scrollLevel >= 80){
       setHeaderStyle({...headerStyle,
-        backgroundColor:'#ffff',
-        boxShadow:'rgba(0, 0, 0, 0.1) 0px 4px 12px'
+        // backgroundColor:'rgb(255 255 255 255);',
+        boxShadow:'rgba(0, 0, 0, 0.2) 0px 4px 12px',
+        backgroundColor:'rgb(255 255 255 / 10%);',
+        backdropFilter:'blur(60px)'
       })
     }else{
       setHeaderStyle(headerStyles)
