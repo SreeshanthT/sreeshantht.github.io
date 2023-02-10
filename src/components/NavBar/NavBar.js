@@ -1,4 +1,5 @@
 import React,{ useState, useEffect } from 'react'
+import MobNavBar from './components/MobNavBar/MobNavBar'
 import WebNavBar from './components/WebNavBar/WebNavBar'
 import './NavBar.css'
 
@@ -15,7 +16,7 @@ function NavBar() {
   },);
   return size >=768 ?(
     <WebNavBar/> 
-  ):null
+  ): <MobNavBar/>
 }
 
 export default NavBar

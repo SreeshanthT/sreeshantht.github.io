@@ -1,3 +1,7 @@
+:root {
+  --nav-bg-color:rgb(255 255 255 / 10%);
+  --blur:blur(60px)
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -7,6 +11,7 @@ body {
 a {
   color: #0563bb;
   text-decoration: none;
+  
 }
 
 a:hover {
