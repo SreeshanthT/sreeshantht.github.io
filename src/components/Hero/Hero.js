@@ -27,7 +27,7 @@ function Hero() {
         };
     },[]);
     return (
-        <div id="hero" className='d-flex flex-column justify-content-center'>
+        <section id="hero" className='d-flex flex-column justify-content-center'>
             <div className="container" data-aos="zoom-in" data-aos-delay="100">
                 <h1>Sreeshanth Thekkedath</h1>
                 <p>I'm <span ref={el}></span></p>
@@ -43,7 +43,7 @@ function Hero() {
                     }
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

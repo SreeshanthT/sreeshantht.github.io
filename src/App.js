@@ -1,5 +1,6 @@
 import Hero from './components/Hero/Hero';
 import NavBar from './components/NavBar/NavBar';
+import About from './components/About/About';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -9,6 +10,7 @@ function App() {
       <NavBar/>
       <Hero/>
       <Hero/>
+      <About></About>
       {/* <Hero/> */}
     </div>
   );
