@@ -4,10 +4,10 @@ import "./About.css"
 import aboutImg from "../../img/hero-bg2.jpg"
 
 
-const About = () => {
+const About = (props) => {
     return (
         <React.Fragment>
-            <section id="about" className={"about"}>
+            <section ref={props.targetRef} id="about" className={"about"}>
                 <div className={"container"} data-aos="fade-up">
 
                     <div className={"section-title"}>

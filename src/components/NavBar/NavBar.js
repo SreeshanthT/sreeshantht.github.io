@@ -2,7 +2,7 @@ import React,{ useState, useEffect } from 'react'
 import WebNavBar from './components/WebNavBar/WebNavBar'
 import './NavBar.css'
 
-function NavBar() {
+function NavBar(props) {
   const [size, setSize] = useState(window.innerWidth)
   const handleSizeReduction = ()=>{
     setSize(window.innerWidth)
@@ -14,7 +14,7 @@ function NavBar() {
     });
   },);
   return size >=768 ?(
-    <WebNavBar/> 
+    <WebNavBar targetRef = {props.targetRef}/> 
   ):null
 }
 
