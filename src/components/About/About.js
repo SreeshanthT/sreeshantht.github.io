@@ -19,6 +19,30 @@ const About = () => {
                         <div className={"col-lg-4"}>
                             {/* <img src={"/components/img/hero-bg2.jpg"} className={"img-fluid"} alt=""/> */}
                             <img src={aboutImg} className={"img-fluid"} alt="" />
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="250 211.333 562.5 577.333">
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="currentColor" d="M625 716.5Q250 933 250 500t375-216.5q375 216.5 0 433Z"/>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#a)">
+                                <path fill="#0563BB" d="M625 716.5Q250 933 250 500t375-216.5q375 216.5 0 433Z"/>
+                            </g>
+                        </svg> */}
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="250 211.333 562.5 577.333">
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="currentColor" d="M625 716.5Q250 933 250 500t375-216.5q375 216.5 0 433Z"/>
+                                </clipPath>
+                                <pattern id="b" patternUnits="userSpaceOnUse" width="1000" height="1000">
+                                    <image className='about__blob-image' 
+                                        xlinkHref='http://localhost:3000/static/media/hero-bg2.9019c4c41850ef33203d.jpg' />
+                                </pattern>
+                            </defs>
+                            <g clip-path="url(#a)">
+                                <path fill="url(#b)" d="M625 716.5Q250 933 250 500t375-216.5q375 216.5 0 433Z"/>
+                            </g>
+                        </svg> */}
                         </div>
                         <div className="col-lg-8 pt-4 pt-lg-0 content">
                             <h3>UI/UX Designer &amp; Web Developer.</h3>

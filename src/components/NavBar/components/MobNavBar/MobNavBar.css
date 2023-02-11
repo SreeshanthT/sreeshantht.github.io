@@ -5,6 +5,8 @@
     left:0;
     z-index:1;
     background-color: #fff;
+    /* box-shadow:rgba(0, 0, 0, 0.2) 0px 4px 12px; */
+    box-shadow: rgb(0 0 0 / 62%) 0px 5px 14px;
 }
 #mob-header a{
     text-decoration: none;
@@ -84,4 +86,8 @@
     font-size: 1.5rem;
     cursor: pointer;
     color: #45505b;
+}
+
+.show-menu{
+    bottom: 0;
 }
