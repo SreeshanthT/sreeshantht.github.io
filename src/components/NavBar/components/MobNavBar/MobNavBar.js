@@ -10,30 +10,29 @@ function MobNavBar() {
         sectionTarget.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
         window.scrollTo(0,sectionTarget.offsetTop-10);
     }
-    const handleScroll = (sectioId=null)=>{
-        if(sectioId){
-            setActiveSection(sectioId)
-        }else{
-            const sections = document.querySelectorAll("section");
-            let active = "";
-            sections.forEach(section => {
-              if (window.pageYOffset >= section.offsetTop - 80 && window.pageYOffset < section.offsetTop + section.offsetHeight) {
-                active = section.id;
-              }
-            });
-            setActiveSection(active);
-        }
+    const handleScroll = ()=>{
+        const sections = document.querySelectorAll("section");
+        let active = "";
+        sections.forEach(section => {
+          if (window.pageYOffset >= section.offsetTop - 80 && window.pageYOffset < section.offsetTop + section.offsetHeight) {
+            active = section.id;
+          }
+        });
+        setActiveSection(active);
     }
     const handleClick = (event)=>{
         event.preventDefault();
         let sectioId = event.target.parentNode.getAttribute('data-secion')
         scrollInto(sectioId)
         document.getElementById('nav-menu').classList.remove('show-menu')
-        handleScroll(sectioId)
+        setActiveSection(sectioId)
     }
 
     useEffect(()=>{
-        handleScroll()
+        window.addEventListener("scroll", handleScroll);
+        return (()=>{
+            window.removeEventListener("scroll", handleScroll);
+        })
     },[])
 
     return (
@@ -43,9 +42,9 @@ function MobNavBar() {
                 <div className="mob-nav-menu" id="nav-menu">
                     <ul className="nav__list grid">
                         {
-                            navBarContents.map((obj)=>{
+                            navBarContents.map((obj,index)=>{
                                 return(
-                                    <li className="nav__item">
+                                    <li className="nav__item" key={index}>
                                         <a href={`#${obj.id}`} 
                                             className={`nav__link ${activeSection === obj.id ? 'active' : ''}`} 
                                             onClick={handleClick} 
@@ -58,7 +57,7 @@ function MobNavBar() {
                             })
                         }
                     </ul>
-                    <i class='bx bx-x nav__close' id='nav-close' onClick={()=>{
+                    <i className='bx bx-x nav__close' id='nav-close' onClick={()=>{
                         document.getElementById('nav-menu').classList.remove('show-menu')
                     }}></i>
                 </div>
@@ -66,7 +65,7 @@ function MobNavBar() {
                     <div className="nav__toggle" id="nav-toggle" onClick={()=>{
                         document.getElementById('nav-menu').classList.add('show-menu')
                     }}>
-                        <i class='bx bx-grid-alt'></i>
+                        <i className='bx bx-grid-alt'></i>
                     </div>
                 </div>
             </div>

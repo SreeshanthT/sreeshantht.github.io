@@ -1,7 +1,6 @@
 import React,{ useState, useEffect } from 'react'
 import MobNavBar from './components/MobNavBar/MobNavBar'
 import WebNavBar from './components/WebNavBar/WebNavBar'
-import './NavBar.css'
 
 function NavBar() {
   const [size, setSize] = useState(window.innerWidth)

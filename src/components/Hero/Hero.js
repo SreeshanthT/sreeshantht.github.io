@@ -35,7 +35,7 @@ function Hero() {
                     { 
                         socials.map((obj,index)=>{
                             return(
-                                <button class='social-link' key={index}>
+                                <button className='social-link' key={index}>
                                     <i className={`bx bxl-${obj.class}`}></i>
                                 </button>
                             )
