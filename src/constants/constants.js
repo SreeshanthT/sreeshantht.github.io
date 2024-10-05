@@ -19,3 +19,12 @@ export const navBarContents = [
     {'id':'services','title':'Services','iconClsName':'bx bx-server'},
     {'id':'contact','title':'Contact','iconClsName':'bx bx-envelope'},
 ]
+
+export const skillsData = [
+    {id: "1", name: "Python", percentage: "70"},
+    {id: "2",name: "Django", percentage: "60"},
+    {id: "3",name: "HTML", percentage: "80"},
+    {id: "4",name: "CSS", percentage: "60"}
+]
+
+export const SKILLS_PARA = "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
