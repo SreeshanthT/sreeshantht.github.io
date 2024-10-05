@@ -20,10 +20,18 @@ function WebNavBar(props) {
     setActiveSection(active);
   };
 
-  const scrollInto = (id) => {
+  const scrollInto = (id, offset = 0) => {
     let sectionTarget = document.getElementById(id);
-    if(sectionTarget){
-      sectionTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    console.log(sectionTarget);
+    if (sectionTarget) {
+      // Get the position of the element relative to the document
+      const sectionPosition = sectionTarget.getBoundingClientRect().top + window.scrollY;
+  
+      // Scroll to the position minus the offset with smooth behavior
+      window.scrollTo({
+        top: sectionPosition - offset,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -31,7 +39,7 @@ function WebNavBar(props) {
     event.preventDefault();
     var target = event.target.parentNode.getAttribute('data-secion')
     if(target){
-      scrollInto(target)
+      scrollInto(target, 100)
     }
   };
 
