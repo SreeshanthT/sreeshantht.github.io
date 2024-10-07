@@ -7,6 +7,15 @@ import './Hero.css'
 import "aos/dist/aos.css";
 import 'boxicons/css/boxicons.min.css';
 
+
+const socialClick = (e)=>{
+    let href = e.currentTarget.getAttribute('data-link')
+    if(href){
+        window.open(href, "_blank")
+    }
+}
+
+
 function Hero() {
     const el = useRef(null);
     const [socials, setSocials] = useState([])
@@ -26,6 +35,7 @@ function Hero() {
             typed.destroy();
         };
     },[]);
+
     return (
         <section id="hero" className='d-flex flex-column justify-content-center'>
             <div className="container" data-aos="zoom-in" data-aos-delay="100">
@@ -35,7 +45,7 @@ function Hero() {
                     { 
                         socials.map((obj,index)=>{
                             return(
-                                <button className='social-link' key={index}>
+                                <button className='social-link' key={index} onClick={socialClick} data-link={obj.onload}>
                                     <i className={`bx bxl-${obj.class}`}></i>
                                 </button>
                             )

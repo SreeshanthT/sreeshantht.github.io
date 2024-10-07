@@ -1,9 +1,9 @@
 export const socialsIcons = [
-    {'name':'twitter','class':'twitter','onload':'',},
+    {'name':'discord','class':'discord','onload':'',},
     {'name':'facebook','class':'facebook','onload':'',},
-    {'name':'instagram','class':'instagram','onload':'',},
+    {'name':'instagram','class':'instagram','onload':'https://www.instagram.com/sreeshanth_thekkedath/',},
     {'name':'skype','class':'skype','onload':'',},
-    {'name':'linkedin','class':'linkedin','onload':'',},
+    {'name':'linkedin','class':'linkedin','onload':'https://www.linkedin.com/in/sreeshanth-thekkedath-110393172/',},
 ]
 export const headerStyles = {
     backgroundColor:'transparent',
