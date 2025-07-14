@@ -70,7 +70,6 @@ export const FACT_NOTE = `
 `
 
 export const PORTFOLIO_PARA = `
-    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-    sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-    ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+I help businesses grow online by building custom web apps, e-commerce platforms, and SaaS solutions. 
+I also offer cloud infrastructure support, branding, and end-to-end digital services tailored to your needs.
 `
