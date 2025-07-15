@@ -76,3 +76,21 @@ export const PORTFOLIO_PARA = `
 I help businesses grow online by building custom web apps, e-commerce platforms, and SaaS solutions. 
 I also offer cloud infrastructure support, branding, and end-to-end digital services tailored to your needs.
 `
+export const ABOUT = {
+    name: "Sreeshanth Thekkedath",
+    title: "Software Engineer",
+    description: `
+        I am a software engineer with a passion for creating innovative solutions. 
+        My expertise lies in full-stack development, cloud computing, and digital transformation. 
+        I thrive on challenges and enjoy collaborating with teams to deliver high-quality software products.
+    `,
+    skills: [
+        { name: "Python", level: "Intermediate" },
+        { name: "Django", level: "Intermediate" },
+        { name: "HTML", level: "Advanced" },
+        { name: "CSS", level: "Intermediate" }
+    ],
+    location: "Malappuram, Kerala, 676317",
+    email: "sreeshanththekkedath8@gmail.com",
+    phone: "+91 9947242749",
+}

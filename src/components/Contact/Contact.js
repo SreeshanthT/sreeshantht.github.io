@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Contact.css';
-import { emailjs_service_id, emailjs_template_id, emailjs_user_id } from '../../constants/constants';
+import { emailjs_service_id, emailjs_template_id, emailjs_user_id, ABOUT } from '../../constants/constants';
 
 // import './Contact.css'; // Uncomment if you add custom styles
 
@@ -68,17 +68,17 @@ const Contact = () => {
               <div className="address">
                 <i className="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>{location}</p>
+                <p>{ABOUT.location}</p>
               </div>
               <div className="email">
                 <i className="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>{email}</p>
+                <p>{ABOUT.email}</p>
               </div>
               <div className="phone">
                 <i className="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>{phone}</p>
+                <p>{ABOUT.phone}</p>
               </div>
             </div>
           </div>
