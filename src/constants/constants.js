@@ -28,6 +28,9 @@ export const skillsData = [
 ]
 
 let projects_count = 5
+export const emailjs_service_id = "service_y34lswj";
+export const emailjs_template_id = "template_tyj3vcj";
+export const emailjs_user_id = "NbemrVU-wAfconvvG";
 export const FactsData = [
     {id:1, name: "Happy Clients", val: 0, icon: "bi bi-emoji-smile"},
     {id:2, name: "Projects", val: projects_count, icon: "bi bi-journal-richtext"},
