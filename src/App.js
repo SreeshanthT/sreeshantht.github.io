@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero';
 import NavBar from './components/NavBar/NavBar';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
+import Resume from './components/Resume/Resume';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,6 +14,7 @@ function App() {
       <NavBar/>
       <Hero/>
       <About></About>
+      <Resume></Resume>
       <Portfolio></Portfolio>
       {/* <Hero/> */}
     </div>
