@@ -1,6 +1,16 @@
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+.back-to-top-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 104px;
+  position: fixed;
+  bottom: -59px;
+  z-index: 99999;
+}
+
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -30,4 +40,15 @@
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .back-to-top-container{
+    justify-content: center !important;
+  }
+  .back-to-top{
+    right: 0px;
+    bottom: 15px;
+    position: relative !important;
+  }
 }

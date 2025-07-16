@@ -22,15 +22,17 @@ const BackToTop = () => {
   };
 
   return (
-    <a
-      href="#"
-      className={`back-to-top d-flex align-items-center justify-content-center${active ? ' active' : ''}`}
-      onClick={handleClick}
-      aria-label="Back to top"
-    >
-      {/* Replace with your icon library if needed */}
-      <span className="back-to-top-icon">↑</span>
-    </a>
+    <div className='back-to-top-container'>
+      <a
+        href="#"
+        className={`back-to-top d-flex align-items-center justify-content-center${active ? ' active' : ''}`}
+        onClick={handleClick}
+        aria-label="Back to top"
+      >
+        {/* Replace with your icon library if needed */}
+        <span className="back-to-top-icon">↑</span>
+      </a>
+    </div>
   );
 };
 
