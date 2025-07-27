@@ -1,6 +1,6 @@
 import React from 'react';
 import "./About.css"
-import aboutImg from "../../img/hero-bg2.jpg"
+import { aboutImg, aboutInfo } from "../../constants/constants"
 import FactsSection from '../FactSection/FactSection';
 import Skills from '../Skill/Skills';
 
@@ -33,24 +33,32 @@ const About = () => {
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                                 magna aliqua.
                             </p> */}
-                            <div className="row">
-                                <div className="col-lg-6">
-                                    <ul>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>22 Sept 1997</span></li>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9947242749</span></li>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kerala, India</span></li>
-                                    </ul>
-                                </div>
-                                <div className="col-lg-6">
-                                    <ul>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>27</span></li>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B-Tech</span></li>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sreeshanththekkedath8@gmail.com</span></li>
-                                        <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                                    </ul>
-                                </div>
-                            </div>
+                            {(() => {
+                                // Define the about info data
+
+                                return (
+                                    <div className="row">
+                                        {aboutInfo.map((col, colIdx) => (
+                                            <div className="col-lg-6" key={colIdx}>
+                                                <ul>
+                                                    {col.map((item, idx) => (
+                                                        <li key={item.label}>
+                                                            <i className="bi bi-chevron-right"></i> <strong>{item.label}:</strong>{" "}
+                                                            {item.label === "Website" ? (
+                                                                <span>
+                                                                    <a href={item.value} target="_blank" rel="noopener noreferrer">Crio Portfolio</a>
+                                                                </span>
+                                                            ) : (
+                                                                <span>{item.value}</span>
+                                                            )}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        ))}
+                                    </div>
+                                );
+                            })()}
                             <p>
                             Let's build something amazing together! If you need a reliable, capable developer to make your project alive, then get in touch with me! Whether it is a new application, an existing one to be built or revamped, or performance issues that you want fixed, let's get started!.
                             </p>

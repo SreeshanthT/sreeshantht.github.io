@@ -43,12 +43,15 @@ function Hero() {
                 <p>I'm <span ref={el}></span></p>
                 <div className="social-links">
                     { 
-                        socials.map((obj,index)=>{
-                            return(
-                                <button className='social-link' key={index} onClick={socialClick} data-link={obj.onload}>
-                                    <i className={`bx bxl-${obj.class}`}></i>
-                                </button>
-                            )
+                        socials.map((obj, index) => {
+                            if (obj.onload && obj.onload.trim() !== "") {
+                                return (
+                                    <button className='social-link' key={index} onClick={socialClick} data-link={obj.onload}>
+                                        <i className={`bx bxl-${obj.class}`}></i>
+                                    </button>
+                                );
+                            }
+                            return null;
                         })
                     }
                 </div>

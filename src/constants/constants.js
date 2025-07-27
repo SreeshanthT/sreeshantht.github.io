@@ -21,11 +21,47 @@ export const navBarContents = [
 ]
 
 export const skillsData = [
-    {id: "1", name: "Python", percentage: "70"},
-    {id: "2",name: "Django", percentage: "60"},
-    {id: "3",name: "HTML", percentage: "80"},
-    {id: "4",name: "CSS", percentage: "60"}
+    {id: "1", name: "Python", percentage: "85"},
+    {id: "2", name: "JavaScript", percentage: "75"},
+    {id: "3", name: "Django", percentage: "80"},
+    {id: "4", name: "React", percentage: "70"},
+    {id: "5", name: "Flask", percentage: "75"},
+    {id: "6", name: "HTML", percentage: "85"},
+    {id: "7", name: "CSS", percentage: "75"},
+    {id: "8", name: "Bootstrap", percentage: "70"},
+    {id: "9", name: "MySQL", percentage: "75"},
+    {id: "10", name: "PostgreSQL", percentage: "70"},
+    {id: "11", name: "REST API", percentage: "80"},
+    {id: "12", name: "GraphQL", percentage: "65"},
+    {id: "13", name: "AWS", percentage: "70"},
+    {id: "14", name: "Docker", percentage: "65"},
+    {id: "15", name: "Terraform", percentage: "60"},
+    {id: "16", name: "Git", percentage: "80"},
+    {id: "17", name: "GitLab CI/CD", percentage: "70"},
+    {id: "18", name: "nginx", percentage: "65"},
+    {id: "19", name: "Web Scraping", percentage: "75"},
+    {id: "20", name: "Raspberry Pi", percentage: "70"},
+    {id: "21", name: "PCB Designing", percentage: "65"},
+    {id: "22", name: "IoT", percentage: "70"},
+    {id: "23", name: "Data Structures", percentage: "75"},
+    {id: "24", name: "Algorithms", percentage: "70"}
 ]
+
+export const aboutImg = require('../img/hero-bg2.jpg')
+export const aboutInfo = [
+  [
+      { label: "Birthday", value: "22 Sept 1997" },
+      { label: "Website", value: "https://www.crio.do/learn/portfolio/sreeshanththekkedath8/" },
+      { label: "Phone", value: "+91 9947242749" },
+      { label: "City", value: "Malappuram, Kerala, 676317" }
+  ],
+  [
+      { label: "Age", value: "27" },
+      { label: "Degree", value: "B-Tech" },
+      { label: "Email", value: "sreeshanththekkedath8@gmail.com" },
+      { label: "Freelance", value: "Available" }
+  ]
+];
 
 let projects_count = 5
 export const emailjs_service_id = "service_y34lswj";
@@ -42,16 +78,35 @@ export const portfolios = [
   {
     id: 1,
     category: "Web",
-    image: "https://i.pinimg.com/736x/d0/0d/7e/d00d7e5283fe55c03ab1b3f7da4dfd6e.jpg",
-    title: "App 1",
-    description: "App",
+    image: require('../img/portfolio/primalcode/alt-tribe/alt-tribe-home.png'),
+    title: "Alt-Tribe",
+    description: "Alt-Tribe is a platform for showccasing the talent of the people in the society. Helps the people to get freelance work and also helps the people to get the work done by the freelancers.",
+    other_images: [
+      require('../img/portfolio/primalcode/alt-tribe/Home-Alt-Tribe-07-15-2025_08_57_PM.png'),
+    ],
+    is_active: true
   },
   {
     id: 2,
-    category: "App",
-    image: "https://i.pinimg.com/736x/c6/0c/0c/c60c0c960a41d79213ba0460726b90a5.jpg",
-    title: "App 2",
-    description: "App",
+    category: "Web",
+    image: require('../img/portfolio/primalcode/marzomilan/marzomilan-home.png'),
+    title: "Marzo Milan",
+    description: "Marzo Milan is an e-commerce website for the products of Marzo Milan. It is a platform for the people to buy the products of Marzo Milan.",
+    other_images: [
+      require('../img/portfolio/primalcode/marzomilan/Marzo-Milan-07-18-2025_09_09_PM.png'),
+    ],
+    is_active: true
+  },
+  {
+    id: 3,
+    category: "Web",
+    image: require('../img/portfolio/primalcode/lexstays/lexstays.png'),
+    title: "Lexstays",
+    description: "Lexstays is a hotel booking website for the people to book the hotels.",
+    other_images: [
+      require('../img/portfolio/primalcode/lexstays/lexstays.png'),
+    ],
+    is_active: false
   },
 ];
 

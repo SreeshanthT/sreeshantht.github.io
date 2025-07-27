@@ -71,7 +71,7 @@ return (
                     </div>
 
                     <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-                            {portfolios
+                            {portfolios.filter(portfolio => portfolio.is_active)
                             .filter(
                                     (portfolio) => activeFilter === "*" || portfolio.category === activeFilter
                             )
@@ -86,7 +86,6 @@ return (
                                             <img src={portfolio.image} className="img-fluid" alt="" />
                                             <div className="portfolio-info">
                                             <h4>{portfolio.title}</h4>
-                                            <p>{portfolio.description}</p>
                                             <div className="portfolio-links">
                                                     <a href={portfolio.image} data-gallery="portfolioGallery" className="portfolio-lightbox" title={portfolio.title}>
                                                     <i className="bx bx-plus"></i>
