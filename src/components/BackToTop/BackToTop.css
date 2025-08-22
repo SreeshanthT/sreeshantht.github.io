@@ -8,7 +8,7 @@
   height: 104px;
   position: fixed;
   bottom: -59px;
-  z-index: 99999;
+  /*z-index: 99999;*/
 }
 
 .back-to-top {
@@ -47,8 +47,6 @@
     justify-content: center !important;
   }
   .back-to-top{
-    right: 0px;
-    bottom: 15px;
-    position: relative !important;
+    bottom: 60px;
   }
 }
