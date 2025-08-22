@@ -107,6 +107,17 @@ export const portfolios = [
       require('../img/portfolio/primalcode/lexstays/lexstays.png'),
     ],
     is_active: false
+  },  
+  {
+    id: 4,
+    category: "Web",
+    image: require('../img/portfolio/Personal/CoinDice/Coin-Dice-Customizable-Coin-Flip-08-22-2025_10_00_PM.png'),
+    title: "Coin Dice",
+    description: "Coin Dice is a customizable coin flip and dice roll web application. It allows users to create their own coins and dice with custom labels.",
+    other_images: [
+      require('../img/portfolio/Personal/CoinDice/Coin-Dice-Customizable-Coin-Flip-08-22-2025_09_56_PM.png'),
+    ],
+    is_active: true
   },
 ];
 
