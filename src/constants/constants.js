@@ -131,7 +131,7 @@ export const portfolios = [
     other_images: [
       require('../img/portfolio/Personal/CoinDice/Coin-Dice-Customizable-Coin-Flip-08-22-2025_09_56_PM.png'), // Placeholder
     ],
-    is_active: true
+    is_active: false
   },
 ];
 
