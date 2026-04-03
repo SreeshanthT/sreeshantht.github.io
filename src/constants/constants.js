@@ -44,7 +44,10 @@ export const skillsData = [
     {id: "21", name: "PCB Designing", percentage: "65"},
     {id: "22", name: "IoT", percentage: "70"},
     {id: "23", name: "Data Structures", percentage: "75"},
-    {id: "24", name: "Algorithms", percentage: "70"}
+    {id: "25", name: "Machine Learning", percentage: "60"},
+    {id: "26", name: "AI Automation", percentage: "65"},
+    {id: "27", name: "Data Analysis", percentage: "70"},
+    {id: "28", name: "Predictive Modeling", percentage: "55"}
 ]
 
 export const aboutImg = require('../img/hero-bg2.jpg')
@@ -58,12 +61,12 @@ export const aboutInfo = [
   [
       { label: "Age", value: "27" },
       { label: "Degree", value: "B-Tech" },
-      { label: "Email", value: "sreeshanththekkedath8@gmail.com" },
+      { label: "Email", value: "iam.sreeshanth.t@gmail.com" },
       { label: "Freelance", value: "Available" }
   ]
 ];
 
-let projects_count = 5
+let projects_count = 6
 export const emailjs_service_id = "service_y34lswj";
 export const emailjs_template_id = "template_tyj3vcj";
 export const emailjs_user_id = "NbemrVU-wAfconvvG";
@@ -119,6 +122,17 @@ export const portfolios = [
     ],
     is_active: true
   },
+  {
+    id: 5,
+    category: "AI",
+    image: require('../img/portfolio/Personal/CoinDice/Coin-Dice-Customizable-Coin-Flip-08-22-2025_10_00_PM.png'), // Placeholder image, replace with AI-related image
+    title: "AI Automation Services",
+    description: "Providing AI-powered automation solutions for businesses to streamline operations, enhance efficiency, and drive growth. Services include custom AI models, process automation, data analysis, and intelligent decision-making tools.",
+    other_images: [
+      require('../img/portfolio/Personal/CoinDice/Coin-Dice-Customizable-Coin-Flip-08-22-2025_09_56_PM.png'), // Placeholder
+    ],
+    is_active: true
+  },
 ];
 
 export const categories = [];
@@ -157,6 +171,6 @@ export const ABOUT = {
         { name: "CSS", level: "Intermediate" }
     ],
     location: "Malappuram, Kerala, 676317",
-    email: "sreeshanththekkedath8@gmail.com",
+    email: "iam.sreeshanth.t@gmail.com",
     phone: "+91 9947242749",
 }
